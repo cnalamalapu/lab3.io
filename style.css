@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333; 
+    font-size: 20px; 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 150px auto;
+    background-color: #f0f8ff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 32px; 
+    margin-bottom: 20px;
+  }
+  
+  .details{
+    text-align: center;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+  
+  .input,
+  .range_slider,
+  .tip_percentage,
+  .tip_amount,
+  .total_bill {
+    margin-bottom: 15px;
+    background-color: #edf5ff; 
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type='number'] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #e8f0ff; 
+  }
+  
+  input[type='range'] {
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  input[disabled] {
+    background-color: #eee;
+    cursor: not-allowed;
+  }
+  
+  /* Colorful elements */
+  .bill_total_label,
+  .tip_percentage_label,
+  .tip_amount_label,
+  .total_bill_label,
+  .heading,
+  .range_slider_label,
+  .details {
+    color: #ff6600; 
+  }
+  
+  .tip_range_slider {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      margin: 20px auto;
+    }
+  
+    .heading {
+      font-size: 26px;
+    }
+  
+    input[type='range'] {
+      width: 90%;
+    }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 90%;
+      margin: 10px auto;
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+  
+    .details{
+        font-size: 16px;
+    }
+
+    .input,
+    .range_slider,
+    .tip_percentage,
+    .tip_amount,
+    .total_bill {
+      padding: 10px;
+    }
+  
+    input[type='number'] {
+      width: calc(100% - 15px);
+      padding: 8px;
+    }
+  
+    input[type='range'] {
+      width: 95%;
+      margin: 5px auto;
+    }
+  }
+  

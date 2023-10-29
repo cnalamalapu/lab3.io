@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tip Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  <body>
+    <div class="container">
+        <p class="details"> ITMD 565 - Lab 3 - Chandini Nalamalapu</p>
+            <h1 class="heading" >Tip Calculator</h1>
+            <form id="mainForm">
+                <div class="input">
+                  <label class="bill_total_label" for="billTotal">Bill Total:</label>
+                  <input type="number" class="bill_total_input" id="billTotal" placeholder="Total Bill">
+                </div>
+              <div class="range_slider">
+                  <label class="range_slider_label" for="tipInput">Tip:</label>
+                  <input type="range" class="tip_range_slider" id="tipInput" value="0">
+              </div>
+              <div class="tip_percentage">
+                <label class="tip_percentage_label" for="tipPercentage">Tip Percentage:</label>
+                <input type="number" class="tip_percentage_input" id="tipPercentage" disabled>
+              </div>
+              <div class="tip_amount">
+                <label class="tip_amount_label" for="tipAmount">Tip amount:</label>
+                <input type="number" class="tip_amount_input" id="tipAmount" disabled>
+              </div>
+              <div class="total_bill">
+                <label class="total_bill_label" for="totalBillWithTip">Total Bill with Tip: </label>
+                <input type="number" class="total_bill_input" id="totalBillWithTip" disabled>
+              </div>
+            </form> 
+    </div>   
+  </body>
+</html>
